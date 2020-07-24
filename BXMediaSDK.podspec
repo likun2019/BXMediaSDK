@@ -93,7 +93,7 @@ Pod::Spec.new do |spec|
 
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
-  spec.vendored_frameworks = 'BXMediaSDK/BXMediaSDK.framework'
+  spec.vendored_frameworks = 'BXMediaSDK.framework'
   # spec.public_header_files = "Classes/**/*.h"
 
 
