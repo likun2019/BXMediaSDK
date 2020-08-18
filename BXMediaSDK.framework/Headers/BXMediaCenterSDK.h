@@ -12,7 +12,13 @@
 @optional
 /// 加载激励视频广告
 /// @param adId 广告id
-- (void)showVideoAdWithId:(NSString *)adId;
+/// @param adType 广告类型
+- (void)showVideoAdWithId:(NSString *)adId adType:(NSInteger)adType;
+
+/// 显示分享视图
+/// @param adId 广告id
+
+- (void)showShareWithId:(NSString *)adId;
 
 @end
 
@@ -42,5 +48,8 @@
 /// 视频播放失败上报
 /// @param adId 广告id
 - (void)exportVideoPlayFaildWithId:(NSString *)adId;
+/// 分享成功上报
+/// @param adId 广告id
+- (void)exportShareSuccessWithId:(NSString *)adId;
 @end
 
