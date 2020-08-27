@@ -27,5 +27,8 @@
 @property (nonatomic,assign) NSInteger prizeNum;
 /// 签名
 @property (nonatomic,strong) NSString *sign;
+/// 原始数据
+@property (nonatomic,strong) NSDictionary *originalData;
+
 @end
 

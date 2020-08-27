@@ -18,7 +18,7 @@
 @property (nonatomic,assign) NSInteger adType;
 /// 媒体广告位id
 @property (nonatomic,strong) NSString *pid;
-/// 扩展字段
-@property (nonatomic,strong) NSString *extData;
+/// 原始数据
+@property (nonatomic,strong) NSDictionary *originalData;
 @end
 
