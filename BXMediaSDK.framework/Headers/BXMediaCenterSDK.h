@@ -5,20 +5,22 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
-
+#import "BXMOrderModel.h"
+#import "BXMediaModel.h"
 @protocol BXMediaCenterSDKDelegate <NSObject>
 
 @optional
 /// 加载激励视频广告
-/// @param adId 广告id
-/// @param adType 广告类型
-- (void)showVideoAdWithId:(NSString *)adId adType:(NSInteger)adType;
+/// @param model model
+- (void)showVideoAd:(BXMediaModel *)model;
 
 /// 显示分享视图
-/// @param adId 广告id
+/// @param model model
+- (void)showShare:(BXMediaModel *)model;
 
-- (void)showShareWithId:(NSString *)adId;
+/// 如果配置奖品发放方式为自身发放, 则会调用
+/// @param orderModel 订单
+- (void)withdraw:(BXMOrderModel *)orderModel;
 
 @end
 
