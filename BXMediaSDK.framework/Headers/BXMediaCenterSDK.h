@@ -7,6 +7,7 @@
 #import <UIKit/UIKit.h>
 #import "BXMOrderModel.h"
 #import "BXMediaModel.h"
+#import "BXMMaterilsModel.h"
 @protocol BXMediaCenterSDKDelegate <NSObject>
 
 @optional
@@ -35,6 +36,10 @@
 + (void)setAppKey:(NSString *)appkey
         secretKey:(NSString *)secretKey;
 
+
+/// 获取sdk版本号
++ (NSString *)getSDKVersion;
+
 /// 获取视图
 /// @param frame 视图frame
 /// @param thirdUserId 三方用户唯一标示
@@ -53,5 +58,7 @@
 /// 分享成功上报
 /// @param adId 广告id
 - (void)exportShareSuccessWithId:(NSString *)adId;
+
+
 @end
 

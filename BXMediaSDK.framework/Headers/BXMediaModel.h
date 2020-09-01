@@ -18,6 +18,8 @@
 @property (nonatomic,assign) NSInteger adType;
 /// 媒体广告位id
 @property (nonatomic,strong) NSString *pid;
+/// 活动类型 1摇奖机 2飞镖 3大转盘 4刮刮卡
+@property (nonatomic,assign) NSInteger activityType;
 /// 原始数据
 @property (nonatomic,strong) NSDictionary *originalData;
 @end
