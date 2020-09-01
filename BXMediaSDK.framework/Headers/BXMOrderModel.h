@@ -18,10 +18,7 @@
 @property (nonatomic,strong) NSString *consumerId;
 /// 活动No
 @property (nonatomic,strong) NSString *activityNo;
-/// 奖品赠送类型
-/// 1现金(分)
-/// 2实物
-/// 3虚拟币
+/// 奖品赠送类型 1现金(单位:分)  2实物  3虚拟币
 @property (nonatomic,assign) NSInteger giveType;
 /// 奖品数量
 @property (nonatomic,assign) NSInteger prizeNum;

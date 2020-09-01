@@ -4,17 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/BXMMaterialModel.h</key>
+		<data>
+		13dW6TjXVF+9wF26iGV2bkA/2Cs=
+		</data>
 		<key>Headers/BXMOrderModel.h</key>
 		<data>
-		lKDj5qqsHUpkji4XR9/09FdHDQw=
+		ImKqHX/hN5f2WCQtxGB+0qBayYI=
 		</data>
 		<key>Headers/BXMediaCenterSDK.h</key>
 		<data>
-		bIBa3kIlE+xJbTWJu4g7FIUXCfY=
+		3OwdhgKrkLttqaNkdAtiaKlfa58=
+		</data>
+		<key>Headers/BXMediaMaterialManager.h</key>
+		<data>
+		4Qhbq2n79ih7T6q9qG51p8BsNz0=
 		</data>
 		<key>Headers/BXMediaModel.h</key>
 		<data>
-		PfW1BPDBHXGq2VHbB+SX3AEjRUc=
+		ntVKtIOa5xAR1U9p4snmYedCSrs=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -23,37 +31,59 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/BXMMaterialModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			13dW6TjXVF+9wF26iGV2bkA/2Cs=
+			</data>
+			<key>hash2</key>
+			<data>
+			fJHYhp0csxiq5gXDAaHBvyFAEZqS8xBrzQDxY/Rlg4Y=
+			</data>
+		</dict>
 		<key>Headers/BXMOrderModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lKDj5qqsHUpkji4XR9/09FdHDQw=
+			ImKqHX/hN5f2WCQtxGB+0qBayYI=
 			</data>
 			<key>hash2</key>
 			<data>
-			FZiiKnEYgU4sMdv5e4KP6GoYjFzzU+UEjs/0rbRbjlE=
+			mwotxcJI4xoReMD7LDoLgnP1FNXe7+8NimUshXs25xs=
 			</data>
 		</dict>
 		<key>Headers/BXMediaCenterSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bIBa3kIlE+xJbTWJu4g7FIUXCfY=
+			3OwdhgKrkLttqaNkdAtiaKlfa58=
 			</data>
 			<key>hash2</key>
 			<data>
-			DOxnN5PmHXsGdiaGJND51FRhaocfqGXUj+ARRBSSRAw=
+			K+s/tvBpgX/vUE+KFRlu2xKKSnlkqBqyXFhFHhW/muA=
+			</data>
+		</dict>
+		<key>Headers/BXMediaMaterialManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4Qhbq2n79ih7T6q9qG51p8BsNz0=
+			</data>
+			<key>hash2</key>
+			<data>
+			XzQ+lR6yKtT2kdmi1Ay3CCQVsozGRuXC+BlUOqUkG3c=
 			</data>
 		</dict>
 		<key>Headers/BXMediaModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PfW1BPDBHXGq2VHbB+SX3AEjRUc=
+			ntVKtIOa5xAR1U9p4snmYedCSrs=
 			</data>
 			<key>hash2</key>
 			<data>
-			6oi+6z5/Wedai++cQz5M9MntGtUS2yx52pHwM8xqfA0=
+			xPReJHrUrjD9raeQumsTQbIF/OBSuI9ivNMtguF5rY4=
 			</data>
 		</dict>
 	</dict>

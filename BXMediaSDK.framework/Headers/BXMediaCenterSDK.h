@@ -7,7 +7,7 @@
 #import <UIKit/UIKit.h>
 #import "BXMOrderModel.h"
 #import "BXMediaModel.h"
-#import "BXMMaterilsModel.h"
+
 @protocol BXMediaCenterSDKDelegate <NSObject>
 
 @optional
@@ -58,7 +58,6 @@
 /// 分享成功上报
 /// @param adId 广告id
 - (void)exportShareSuccessWithId:(NSString *)adId;
-
 
 @end
 

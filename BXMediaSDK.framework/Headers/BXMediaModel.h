@@ -12,14 +12,16 @@
 
 /// 广告唯一标示
 @property (nonatomic,strong) NSString *requestId;
-/// 视频类型
-/// 1.穿山甲
-/// 2.广点通
+/// 视频类型 1.穿山甲 2.广点通
 @property (nonatomic,assign) NSInteger adType;
 /// 媒体广告位id
 @property (nonatomic,strong) NSString *pid;
 /// 活动类型 1摇奖机 2飞镖 3大转盘 4刮刮卡
 @property (nonatomic,assign) NSInteger activityType;
+/// 分享类型 0正常分享 1中奖后分享
+@property (nonatomic,assign) NSInteger type;
+/// 奖品列表(奖品名称数组)
+@property (nonatomic,strong) NSArray *prizeList;
 /// 原始数据
 @property (nonatomic,strong) NSDictionary *originalData;
 @end
