@@ -22,6 +22,8 @@
 @property (nonatomic,assign) NSInteger type;
 /// 奖品列表(奖品名称数组)
 @property (nonatomic,strong) NSArray *prizeList;
+/// 抽中奖品名称
+@property (nonatomic,strong) NSString *prizeTitle;
 /// 原始数据
 @property (nonatomic,strong) NSDictionary *originalData;
 @end
