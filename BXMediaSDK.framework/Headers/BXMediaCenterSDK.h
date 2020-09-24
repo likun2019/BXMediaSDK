@@ -55,6 +55,11 @@
 /// 视频播放失败上报
 /// @param adId 广告id
 - (void)exportVideoPlayFaildWithId:(NSString *)adId;
+
+/// 跳过视频
+/// @param adId 广告id
+- (void)exportVideoSkipWithId:(NSString *)adId;
+
 /// 分享成功上报
 /// @param adId 广告id
 - (void)exportShareSuccessWithId:(NSString *)adId;
