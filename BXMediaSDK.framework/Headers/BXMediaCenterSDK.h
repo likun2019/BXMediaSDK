@@ -23,6 +23,21 @@
 /// @param orderModel 订单
 - (void)withdraw:(BXMOrderModel *)orderModel;
 
+/// 获取活动相关数据 sdk向媒体主动索取数据
+/// @param activityData 获取活动相关数据
+/// @param callBack 回调名称
+- (void)getActivityData:(NSString *)activityData callBack:(NSString *)callBack;
+
+/// 更新活动数据 sdk同步数据给媒体
+/// @param activityData sdk传给媒体的数据
+/// @param callBack 回调名称
+- (void)updateActivityData:(NSString *)activityData callBack:(NSString *)callBack;
+
+/// 点击对应任务
+/// @param page 打开对应任务
+/// @param callBack 回调名称
+- (void)openPage:(NSString *)page callBack:(NSString *)callBack;
+
 @end
 
 @interface BXMediaCenterSDK : NSObject
@@ -39,6 +54,35 @@
 
 /// 获取sdk版本号
 + (NSString *)getSDKVersion;
+
+/// 媒体服务端主动获取活动数据
+/// @param paramsData 参数
+/// @param appKey appkey
+/// @param placeId 资源位id
+/// @param consumerId 用户id
+/// @param result 回调结果数据
++ (void)getActivityData:(NSString *)paramsData
+                 appKey:(NSString *)appKey
+                placeId:(NSString *)placeId
+             consumerId:(NSString *)consumerId
+                 result:(void(^)(id jsonData))result;
+
+/// 媒体服务端主动同步活动数据
+/// @param paramsData 参数
+/// @param appKey appkey
+/// @param placeId 资源位id
+/// @param consumerId 用户id
+/// @param result 回调结果数据
++ (void)sendActivityData:(NSString *)paramsData
+                  appKey:(NSString *)appKey
+                 placeId:(NSString *)placeId
+              consumerId:(NSString *)consumerId
+                  result:(void(^)(id jsonData))result;
+
+
+/// 扩展字段. 扩展字段的添加一定要在获取视图之前调用
+/// @param extData 扩展字段
+- (void)setExtData:(NSString *)extData;
 
 /// 获取视图
 /// @param frame 视图frame
@@ -64,5 +108,14 @@
 /// @param adId 广告id
 - (void)exportShareSuccessWithId:(NSString *)adId;
 
+/// 上报活动相关数据
+/// @param activityData 活动相关数据
+/// @param callBack 回调名称
+- (void)exportActivityData:(NSString *)activityData callBack:(NSString *)callBack;
+
+/// 任务完成之后上报相关数据
+/// @param pageData 任务数据
+/// @param callBack 回调名称
+- (void)exportPageData:(NSString *)pageData callBack:(NSString *)callBack;
 @end
 
