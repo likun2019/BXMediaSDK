@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BXMediaSDK"
-  spec.version      = "1.3.5.1"
+  spec.version      = "1.3.5.2"
   spec.summary      = "BXMediaSDK"
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC 
-                      "活动工具SDK初版"
+                      "活动工具SDK"
                       DESC
 
   spec.homepage     = "https://github.com/likun2019"
