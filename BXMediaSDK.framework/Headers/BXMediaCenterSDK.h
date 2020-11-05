@@ -55,12 +55,16 @@
 /// 获取sdk版本号
 + (NSString *)getSDKVersion;
 
+/// 是否显示log, 默认不显示
+/// @param isDebug bool
++ (void)setDebugLog:(BOOL)isDebug;
+
 /// 媒体服务端主动获取活动数据
 /// @param paramsData 参数
 /// @param appKey appkey
 /// @param placeId 资源位id
 /// @param consumerId 用户id
-/// @param result 回调结果数据
+/// @param result 回调结果数据,如果为nil,则请求失败
 + (void)getActivityData:(NSString *)paramsData
                  appKey:(NSString *)appKey
                 placeId:(NSString *)placeId
@@ -72,7 +76,7 @@
 /// @param appKey appkey
 /// @param placeId 资源位id
 /// @param consumerId 用户id
-/// @param result 回调结果数据
+/// @param result 回调结果数据,如果为nil,则请求失败
 + (void)sendActivityData:(NSString *)paramsData
                   appKey:(NSString *)appKey
                  placeId:(NSString *)placeId

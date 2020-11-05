@@ -24,12 +24,18 @@
 
 
 /// 入口展示上报
-/// @param model 如果是自定义素材,则传nil
+/// @param model 如果是自定义素材,则需要组装model
+/// BXMMaterialModel *model = [[BXMMaterialModel alloc] init];
+/// model.appKey = @"";
+/// model.placeId = @"";
 /// @param thirdUserId 三方用户唯一标示
 + (void)entranceShowEventTracking:(BXMMaterialModel *)model thirdUserId:(NSString *)thirdUserId;
 
 /// 入口点击上报
-/// @param model 如果是自定义素材,则传nil
+/// @param model 如果是自定义素材,则需要组装model
+/// BXMMaterialModel *model = [[BXMMaterialModel alloc] init];
+/// model.appKey = @"";
+/// model.placeId = @"";
 /// @param thirdUserId 三方用户唯一标示
 + (void)entranceClickEventTracking:(BXMMaterialModel *)model thirdUserId:(NSString *)thirdUserId;
 @end
