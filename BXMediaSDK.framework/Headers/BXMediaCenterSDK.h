@@ -11,15 +11,15 @@
 @protocol BXMediaCenterSDKDelegate <NSObject>
 
 @optional
-/// 加载激励视频广告
+/// 加载激励视频广告.当用户需要观看广告时,就会调用
 /// @param model model
 - (void)showVideoAd:(BXMediaModel *)model;
 
-/// 显示分享视图
+/// 显示分享视图.如果媒体需要自己把活动分享出去,当用户点击活动中的分享按钮时,就会调用.
 /// @param model model
 - (void)showShare:(BXMediaModel *)model;
 
-/// 如果配置奖品发放方式为自身发放, 则会调用
+/// 提现.如果配置奖品发放方式为媒体自身发放, 则会调用.
 /// @param orderModel 订单
 - (void)withdraw:(BXMOrderModel *)orderModel;
 
