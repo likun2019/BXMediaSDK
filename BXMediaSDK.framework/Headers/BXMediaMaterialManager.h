@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BXMMaterialModel.h"
+#import "BXMHeader.h"
 
 @interface BXMediaMaterialManager : NSObject
 
@@ -24,18 +25,30 @@
 
 
 /// 入口展示上报
-/// @param model 如果是自定义素材,则需要组装model
+/// @param model 如果是自定义素材(即媒体自己的入口图片,不通过接口返回),则需要组装model
 /// BXMMaterialModel *model = [[BXMMaterialModel alloc] init];
 /// model.appKey = @"";
 /// model.placeId = @"";
 /// @param thirdUserId 三方用户唯一标示
-+ (void)entranceShowEventTracking:(BXMMaterialModel *)model thirdUserId:(NSString *)thirdUserId;
++ (void)entranceShowEventTracking:(BXMMaterialModel *)model thirdUserId:(NSString *)thirdUserId BXM_DEPRECATED_MSG_ATTRIBUTE("接口即将废弃,请替换新的接口 -entranceShowEventTrackingWithPlaceId");
+
+/// 入口展示上报
+/// PlaceId:(NSString *)placeId
+/// @param thirdUserId 三方用户唯一标示 没有值传 @""
+/// @param placeMateId 素材id 没有值传 @""
++ (void)entranceShowEventTrackingWithPlaceId:(NSString *)placeId thirdUserId:(NSString *)thirdUserId placeMateId:(NSString *)placeMateId;
 
 /// 入口点击上报
-/// @param model 如果是自定义素材,则需要组装model
+/// @param model 如果是自定义素材(即媒体自己的入口图片,不通过接口返回),则需要组装model
 /// BXMMaterialModel *model = [[BXMMaterialModel alloc] init];
 /// model.appKey = @"";
 /// model.placeId = @"";
 /// @param thirdUserId 三方用户唯一标示
-+ (void)entranceClickEventTracking:(BXMMaterialModel *)model thirdUserId:(NSString *)thirdUserId;
++ (void)entranceClickEventTracking:(BXMMaterialModel *)model thirdUserId:(NSString *)thirdUserId BXM_DEPRECATED_MSG_ATTRIBUTE("接口即将废弃,请替换新的接口 -entranceClickEventTrackingWithPlaceId");
+
+/// 入口点击上报
+/// @param placeId 资源位ID
+/// @param thirdUserId 三方用户唯一标示 没有值传 @""
+/// @param placeMateId 素材id 没有值传 @""
++ (void)entranceClickEventTrackingWithPlaceId:(NSString *)placeId thirdUserId:(NSString *)thirdUserId placeMateId:(NSString *)placeMateId;
 @end

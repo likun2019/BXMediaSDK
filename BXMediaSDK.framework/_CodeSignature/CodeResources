@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BXMMaterialModel.h</key>
 		<data>
-		13dW6TjXVF+9wF26iGV2bkA/2Cs=
+		vRyE2ZmeeR8+lS9tw6v0ldqBISA=
 		</data>
 		<key>Headers/BXMOrderModel.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/BXMediaCenterSDK.h</key>
 		<data>
-		awYUWOZC1KthTRm59YrLj9uhLlE=
+		EkGhGMbbCUoJJm56t79AHJ2f3kw=
 		</data>
 		<key>Headers/BXMediaMaterialManager.h</key>
 		<data>
-		0kFXXuai3emAu5Ly9QlW1Gu9vB4=
+		LflHYM1Ohco4HI8A5uDLqpRQnz0=
 		</data>
 		<key>Headers/BXMediaModel.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AuA46rXLv3cbHixPc9dZ4EmWt2M=
+		UMeGlQwbTbarl7eKADasjagc1TQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			13dW6TjXVF+9wF26iGV2bkA/2Cs=
+			vRyE2ZmeeR8+lS9tw6v0ldqBISA=
 			</data>
 			<key>hash2</key>
 			<data>
-			fJHYhp0csxiq5gXDAaHBvyFAEZqS8xBrzQDxY/Rlg4Y=
+			cvN1zmxuuyimu+Y7MAslrSW4ot2BJ3q6ExdyJzMJAbg=
 			</data>
 		</dict>
 		<key>Headers/BXMOrderModel.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			awYUWOZC1KthTRm59YrLj9uhLlE=
+			EkGhGMbbCUoJJm56t79AHJ2f3kw=
 			</data>
 			<key>hash2</key>
 			<data>
-			q8z6m4S1xOL4TpUaa9WHs39l+YR044jEBXVOJFYgEos=
+			Oy/kpspnUXHMnqj+Csk1VyYIX19mua2dPgZKfwXHX+o=
 			</data>
 		</dict>
 		<key>Headers/BXMediaMaterialManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0kFXXuai3emAu5Ly9QlW1Gu9vB4=
+			LflHYM1Ohco4HI8A5uDLqpRQnz0=
 			</data>
 			<key>hash2</key>
 			<data>
-			gg6XtquYJMJl4JLhjRcUJHMJ6oj9XhFsbcOWwKyYkc0=
+			n4oryAsKq6Wb1pH6nxo69CuBZDvO16ySSzQNb2VSebc=
 			</data>
 		</dict>
 		<key>Headers/BXMediaModel.h</key>

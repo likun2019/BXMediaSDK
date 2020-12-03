@@ -11,18 +11,27 @@
 @protocol BXMediaCenterSDKDelegate <NSObject>
 
 @optional
-/// 加载激励视频广告.当用户需要观看广告时,就会调用
+/// 加载激励视频广告
+/// 当用户需要观看广告时,则会调用.
 /// @param model model
 - (void)showVideoAd:(BXMediaModel *)model;
 
-/// 显示分享视图.如果媒体需要自己把活动分享出去,当用户点击活动中的分享按钮时,就会调用.
+/// 显示分享视图.
+/// 如果媒体需要自己把活动分享出去,当用户点击活动中的分享按钮时,就会调用.
 /// @param model model
 - (void)showShare:(BXMediaModel *)model;
 
-/// 提现.如果配置奖品发放方式为媒体自身发放, 则会调用.
+/// 提现
+/// 如果配置奖品发放方式为媒体自身发放, 则会调用.
 /// @param orderModel 订单
 - (void)withdraw:(BXMOrderModel *)orderModel;
-
+/**
+ *************************************************
+ *
+ * 以下方法为定制活动添加,详情请咨询我方开发人员
+ *
+ **************************************************
+ */
 /// 获取活动相关数据 sdk向媒体主动索取数据
 /// @param activityData 获取活动相关数据
 /// @param callBack 回调名称
@@ -96,19 +105,49 @@
                 thirdUserId:(NSString *)thirdUserId
                     placeId:(NSString *)placeId;
 
-/// 视频播放完成上报
+
+/**
+ *************************************************
+ *
+ * 激励视频加载播放时机上报
+ * 需根据穿山甲或者广点通对应的代理方法调用以下方法
+ *
+ **************************************************
+ */
+/// 视频加载成功上报
+/// @param adId 广告id
+- (void)exportVideoLoadSuccess:(NSString *)adId;
+
+/// 视频曝光成功上报
+/// @param adId 广告id
+- (void)exportVideoExposeSuccess:(NSString *)adId;
+
+/// 视频广告点击上报
+/// @param adId 广告id
+- (void)exportVideoClick:(NSString *)adId;
+
+/// 视频播放完成,点击关闭按钮时上报
 /// @param adId 广告id
 - (void)exportVideoPlaySuccessWithId:(NSString *)adId;
 
-/// 视频播放失败上报
+/// 视频加载播放失败上报
 /// @param adId 广告id
 - (void)exportVideoPlayFaildWithId:(NSString *)adId;
 
 /// 跳过视频
+/// 视频未播放完成时已出现关闭按钮,用户点击关闭时调用
 /// @param adId 广告id
 - (void)exportVideoSkipWithId:(NSString *)adId;
 
+/**
+ *************************************************
+ *
+ * 其他定制功能回调
+ *
+ **************************************************
+ */
 /// 分享成功上报
+/// 调用媒体自己的分享,在分享成功之后调用
 /// @param adId 广告id
 - (void)exportShareSuccessWithId:(NSString *)adId;
 
