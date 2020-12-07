@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "BXMMaterialModel.h"
-#import "BXMHeader.h"
 
 @interface BXMediaMaterialManager : NSObject
 
@@ -30,7 +29,7 @@
 /// model.appKey = @"";
 /// model.placeId = @"";
 /// @param thirdUserId 三方用户唯一标示
-+ (void)entranceShowEventTracking:(BXMMaterialModel *)model thirdUserId:(NSString *)thirdUserId BXM_DEPRECATED_MSG_ATTRIBUTE("接口即将废弃,请替换新的接口 -entranceShowEventTrackingWithPlaceId");
++ (void)entranceShowEventTracking:(BXMMaterialModel *)model thirdUserId:(NSString *)thirdUserId NS_CLASS_DEPRECATED_IOS(1_0,1_3_6,"接口即将废弃,请替换新的接口 -entranceShowEventTrackingWithPlaceId");
 
 /// 入口展示上报
 /// PlaceId:(NSString *)placeId
@@ -44,7 +43,7 @@
 /// model.appKey = @"";
 /// model.placeId = @"";
 /// @param thirdUserId 三方用户唯一标示
-+ (void)entranceClickEventTracking:(BXMMaterialModel *)model thirdUserId:(NSString *)thirdUserId BXM_DEPRECATED_MSG_ATTRIBUTE("接口即将废弃,请替换新的接口 -entranceClickEventTrackingWithPlaceId");
++ (void)entranceClickEventTracking:(BXMMaterialModel *)model thirdUserId:(NSString *)thirdUserId NS_CLASS_DEPRECATED_IOS(1_0,1_3_6,"接口即将废弃,请替换新的接口 -entranceClickEventTrackingWithPlaceId");
 
 /// 入口点击上报
 /// @param placeId 资源位ID

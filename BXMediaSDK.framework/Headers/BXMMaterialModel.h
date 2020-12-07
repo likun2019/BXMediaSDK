@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BXMHeader.h"
 @interface BXMMaterialModel : NSObject
 /// appkey
 @property (nonatomic,strong) NSString *appKey;
@@ -18,8 +17,8 @@
 /// 入口素材url
 @property (nonatomic,strong) NSString *materialPath;
 /// 展示上报url
-@property (nonatomic,strong) NSString *showUrl BXM_DEPRECATED_MSG_ATTRIBUTE("1.3.7之后废弃");
+@property (nonatomic,strong) NSString *showUrl __attribute__((unavailable("从1.3.7开始参数已经废弃")));
 /// 点击上报url
-@property (nonatomic,strong) NSString *clickUrl BXM_DEPRECATED_MSG_ATTRIBUTE("1.3.7之后废弃");
+@property (nonatomic,strong) NSString *clickUrl __attribute__((unavailable("从1.3.7开始参数已经废弃")));
 @end
 
