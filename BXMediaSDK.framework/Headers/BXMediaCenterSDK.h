@@ -11,6 +11,15 @@
 @protocol BXMediaCenterSDKDelegate <NSObject>
 
 @optional
+
+/**
+ *************************************************
+ *
+ * 活动事件相关
+ *
+ **************************************************
+ */
+
 /// 加载激励视频广告
 /// 当用户需要观看广告时,则会调用.
 /// @param model model
@@ -25,6 +34,22 @@
 /// 如果配置奖品发放方式为媒体自身发放, 则会调用.
 /// @param orderModel 订单
 - (void)withdraw:(BXMOrderModel *)orderModel;
+
+/**
+ *************************************************
+ *
+ * 活动加载相关
+ *
+ **************************************************
+ */
+/// 加载进度
+/// @param progress 视图加载进度
+- (void)loadProgress:(double)progress;
+
+/// webView的标题
+/// @param title title
+- (void)activityTitle:(NSString *)title;
+
 /**
  *************************************************
  *
@@ -46,6 +71,7 @@
 /// @param page 打开对应任务
 /// @param callBack 回调名称
 - (void)openPage:(NSString *)page callBack:(NSString *)callBack;
+
 
 @end
 
