@@ -35,6 +35,14 @@
 /// @param orderModel 订单
 - (void)withdraw:(BXMOrderModel *)orderModel;
 
+/// 显示banner类型的广告
+/// @param model model
+- (void)showBannerAd:(BXMediaModel *)model;
+
+
+/// 隐藏banner类型的广告
+- (void)hideBannerAd;
+
 /**
  *************************************************
  *
@@ -119,6 +127,15 @@
                   result:(void(^)(id jsonData))result;
 
 
+/// 媒体定制活动配置
+/// @param placeId 资源位id 必填
+/// @param consumerId 用户唯一标识-userid 必填
+/// @param activityType 活动类型.当前支持红包雨-13
+/// @param extParams 扩展字段 选填
+/// @param result 配置结果
++ (void)getActivityConfigWithPlaceId:(NSString *)placeId consumerId:(NSString *)consumerId activityType:(NSInteger)activityType extParams:(NSString *)extParams result:(void(^)(id jsonData))result;
+
+
 /// 扩展字段. 扩展字段的添加一定要在获取视图之前调用
 /// @param extData 扩展字段
 - (void)setExtData:(NSString *)extData;
@@ -131,6 +148,8 @@
                 thirdUserId:(NSString *)thirdUserId
                     placeId:(NSString *)placeId;
 
+/// 视图在二级页面返回
+- (void)goBack;
 
 /**
  *************************************************
@@ -164,6 +183,36 @@
 /// 视频未播放完成时已出现关闭按钮,用户点击关闭时调用
 /// @param adId 广告id
 - (void)exportVideoSkipWithId:(NSString *)adId;
+
+/**
+ *************************************************
+ *
+ * banner类型广告上报
+ * 需根据穿山甲或者广点通对应的代理方法调用以下方法
+ *
+ **************************************************
+ */
+
+/// banner广告加载成功
+/// @param adId 广告id
+- (void)exportBannerAdLoadSuccess:(NSString *)adId;
+
+/// banner广告展示成功(渲染成功)
+/// @param adId 广告id
+- (void)exportBannerAdExposeSuccess:(NSString *)adId;
+
+/// banner广告被点击
+/// @param adId 广告id
+- (void)exportBannerAdClick:(NSString *)adId;
+
+/// banner广告加载失败
+/// @param adId 广告id
+- (void)exportBannerAdFailed:(NSString *)adId;
+
+/// banner广告被关闭
+/// @param adId 广告id
+- (void)exportBannerAdClose:(NSString *)adId;
+
 
 /**
  *************************************************

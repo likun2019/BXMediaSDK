@@ -12,7 +12,7 @@
 
 /// 广告唯一标示
 @property (nonatomic,strong) NSString *requestId;
-/// 视频类型 1.穿山甲 2.广点通 3:快手
+/// 视频类型 1:穿山甲 2:广点通 3:快手 4:穿山甲banner，5:广点通banner
 @property (nonatomic,assign) NSInteger adType;
 /// 媒体广告位id
 @property (nonatomic,strong) NSString *pid;

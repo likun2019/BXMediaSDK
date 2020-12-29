@@ -32,7 +32,7 @@
 + (void)entranceShowEventTracking:(BXMMaterialModel *)model thirdUserId:(NSString *)thirdUserId NS_CLASS_DEPRECATED_IOS(1_0,1_3_6,"接口即将废弃,请替换新的接口 -entranceShowEventTrackingWithPlaceId");
 
 /// 入口展示上报
-/// PlaceId:(NSString *)placeId
+/// @param placeId 资源位ID
 /// @param thirdUserId 三方用户唯一标示 没有值传 @""
 /// @param placeMateId 素材id 没有值传 @""
 + (void)entranceShowEventTrackingWithPlaceId:(NSString *)placeId thirdUserId:(NSString *)thirdUserId placeMateId:(NSString *)placeMateId;
