@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BXMediaSDK"
-  spec.version      = "1.3.8.1"
+  spec.version      = "1.3.8.2"
   spec.summary      = "BXMediaSDK"
 
   # This description is used to generate tags and improve search results.
