@@ -148,6 +148,9 @@
                 thirdUserId:(NSString *)thirdUserId
                     placeId:(NSString *)placeId;
 
+
+/// 视图是否可返回上一级
+- (BOOL)canGoBack;
 /// 视图在二级页面返回
 - (void)goBack;
 
