@@ -14,6 +14,8 @@
 @property (nonatomic,strong) NSString *placeId;
 /// 素材id
 @property (nonatomic,strong) NSString *placeMateId;
+/// 素材库Id
+@property (nonatomic,strong) NSString *materialId;
 /// 入口素材url
 @property (nonatomic,strong) NSString *materialPath;
 /// 展示上报url
