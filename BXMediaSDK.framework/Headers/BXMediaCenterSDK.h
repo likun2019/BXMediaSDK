@@ -140,6 +140,14 @@
 /// @param extData 扩展字段
 - (void)setExtData:(NSString *)extData;
 
+/**
+  设置支持的广告源, 用英文逗号分割 1穿山甲，2广点通，3快手，4百度
+  @param adSources 支持的广告源
+  一定要在 getViewWithFram 之前调用
+  示例: [self.center setAdSources:@"1,2,3,4"];
+ */
+- (void)setAdSources:(NSString *)adSources;
+
 /// 获取视图
 /// @param frame 视图frame
 /// @param thirdUserId 三方用户唯一标示
