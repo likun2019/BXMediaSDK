@@ -22,6 +22,17 @@
                                success:(void(^)(BXMMaterialModel *model))materilasModel
                                   fail:(void(^)(NSString *error))error;
 
+/// 批量获取入口素材
+/// @param appkey appKey
+/// @param placeIds 资源位id ,英文逗号分割
+/// @param thirdUserId 三方用户唯一标示 可不传
+/// @param materilasModels 素材数组
+/// @param error 错误
++ (void)batchGetEntranceMaterialsWithAppkey:(NSString *)appkey
+                                     placIds:(NSString *)placeIds
+                                thirdUserId:(NSString *)thirdUserId
+                                    success:(void(^)(NSArray *models))materilasModels
+                                       fail:(void(^)(NSString *error))error;
 
 /// 入口展示上报
 /// @param model 如果是自定义素材(即媒体自己的入口图片,不通过接口返回),则需要组装model
