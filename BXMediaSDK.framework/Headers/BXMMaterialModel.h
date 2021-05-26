@@ -18,8 +18,12 @@
 @property (nonatomic,strong) NSString *materialId;
 /// 入口素材url
 @property (nonatomic,strong) NSString *materialPath;
-/// 文字链文案
-@property (nonatomic,strong) NSString *chainText;
+/// 主标题
+@property (nonatomic,strong) NSString *title;
+/// 副标题
+@property (nonatomic,strong) NSString *subTitle;
+/// 按钮标题
+@property (nonatomic,strong) NSString *buttonTitle;
 /// 展示上报url
 @property (nonatomic,strong) NSString *showUrl __attribute__((unavailable("从1.3.7开始参数已经废弃")));
 /// 点击上报url

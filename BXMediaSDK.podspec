@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "BXMediaSDK"
-  spec.version      = "1.4.2.5"
+  spec.version      = "1.4.2.6"
   spec.summary      = "A good activity tool for iOS"
   spec.description  = <<-DESC 
                       "活动工具SDK新版"

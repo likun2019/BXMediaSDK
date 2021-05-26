@@ -191,7 +191,11 @@
 
 /// 视频加载播放失败上报
 /// @param adId 广告id
-- (void)exportVideoPlayFaildWithId:(NSString *)adId;
+- (void)exportVideoPlayFaildWithId:(NSString *)adId __attribute__((deprecated("1.4.2.6版本开始废弃\n请使用新版- (void)exportVideoPlayFaildWithId:error:接口替换")));
+/// 视频加载播放失败上报
+/// @param adId adId 广告id
+/// @param error 错误信息
+- (void)exportVideoPlayFaildWithId:(NSString *)adId error:(NSError *)error;
 
 /// 跳过视频
 /// 视频未播放完成时已出现关闭按钮,用户点击关闭时调用
