@@ -26,5 +26,7 @@
 @property (nonatomic,strong) NSString *prizeTitle;
 /// 原始数据
 @property (nonatomic,strong) NSDictionary *originalData;
+/// 上报数据json
+@property (nonatomic,strong) NSString *eventReportJson;
 @end
 
