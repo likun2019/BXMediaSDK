@@ -161,6 +161,8 @@
 - (BOOL)canGoBack;
 /// 视图在二级页面返回
 - (void)goBack;
+/// 刷新视图
+- (void)reloadView;
 
 /// 用户点击导航栏上的返回按钮
 - (void)backButtonClick:(void(^)(BOOL result))completionHandler;
